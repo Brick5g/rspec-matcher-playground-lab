@@ -3,11 +3,14 @@
 
 Explore RSpec's matcher library by writing specs that use a variety of matcher types to test the **ShoppingCart** Ruby class. You'll practice using equality, predicate, collection, error, and change matchers to verify ShoppingCart's behavior.
 
+**Note:** An `Item` class is provided in `lib/item.rb` for use with your `ShoppingCart`. You can use this class to create items with a `name` and `price`.
+
 **Make sure you have Ruby installed and run `bundle install` before starting this lab.**
 
 ## Instructions
 
 1. **Write specs in `spec/student/` for the provided ShoppingCart Ruby class.**
+   - You may use the `Item` class in `lib/item.rb` to create items for your cart.
    - Write at least one `it` block for each matcher category listed below, all focused on ShoppingCart.
    - Use one `it` block per matcher/scenario for clarity.
 2. Use each of the following matcher categories to test ShoppingCart:

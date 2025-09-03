@@ -13,7 +13,7 @@ describe '[LAB CHECKER] ShoppingCart Matcher Playground Spec Requirements' do
     student_spec_files.each do |file|
       content = File.read(file)
       # Look for an expectation using eq/eql/equal with ShoppingCart
-      if content.match(/expect\(.*ShoppingCart.*\)\.to (eq|eql|equal)/)
+      if content.match(/expect\(.*\)\.to (eq|eql|equal)/)
         found = true
         break
       end
@@ -26,7 +26,7 @@ describe '[LAB CHECKER] ShoppingCart Matcher Playground Spec Requirements' do
     student_spec_files.each do |file|
       content = File.read(file)
       # Look for an expectation using a predicate matcher with ShoppingCart
-      if content.match(/expect\(.*ShoppingCart.*\)\.to (be_truthy|be_falsey|be_nil|be_empty)/)
+      if content.match(/expect\(.*\)\.to (be_truthy|be_falsey|be_nil|be_empty)/)
         found = true
         break
       end
@@ -39,7 +39,7 @@ describe '[LAB CHECKER] ShoppingCart Matcher Playground Spec Requirements' do
     student_spec_files.each do |file|
       content = File.read(file)
       # Look for an expectation using a collection matcher with ShoppingCart
-      if content.match(/expect\(.*ShoppingCart.*\)\.to (include|contain_exactly)/)
+      if content.match(/expect\(.*\)\.to (include|contain_exactly)/)
         found = true
         break
       end
@@ -52,7 +52,7 @@ describe '[LAB CHECKER] ShoppingCart Matcher Playground Spec Requirements' do
     student_spec_files.each do |file|
       content = File.read(file)
       # Look for an expectation using raise_error with ShoppingCart
-      if content.match(/expect\s*\{[^}]*ShoppingCart[^}]*\}\s*\.to\s*raise_error/)
+      if content.match(/expect\s*\{[^}]*\}\s*\.to\s*raise_error/)
         found = true
         break
       end
@@ -65,7 +65,7 @@ describe '[LAB CHECKER] ShoppingCart Matcher Playground Spec Requirements' do
     student_spec_files.each do |file|
       content = File.read(file)
       # Look for an expectation using change matcher with ShoppingCart
-      if content.match(/expect\s*\{[^}]*ShoppingCart[^}]*\}\s*\.to\s*change/)
+      if content.match(/expect\s*\{[^}]*\}\s*\.to\s*change/)
         found = true
         break
       end

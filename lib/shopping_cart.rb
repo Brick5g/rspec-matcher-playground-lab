@@ -10,11 +10,13 @@ class ShoppingCart
 
   def add_item(item)
     raise 'Cart already checked out' if @checked_out
+
     @items << item
   end
 
   def remove_item(item)
     raise 'Cart already checked out' if @checked_out
+
     @items.delete(item)
   end
 
@@ -28,6 +30,7 @@ class ShoppingCart
 
   def checkout!
     raise 'Cart is empty' if empty?
+
     @checked_out = true
   end
 
